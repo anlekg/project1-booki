@@ -16,6 +16,27 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    margin: 12px 0 0 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.nav-button {
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.nav-button:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
 }
 
 .main-container {
