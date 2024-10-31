@@ -16,8 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    margin: 12px 0 0 0;
+    margin: 0 0 0 0;
 }
 
 header {
@@ -29,9 +28,16 @@ header {
     padding: 10px;
 }
 
+.navigation {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+}
+
 .nav-button {
-    padding: 10px;
-    margin-left: 40px;
+    width: 50%;
+    padding-top: 10px;
 }
 
 .nav-button:hover {
