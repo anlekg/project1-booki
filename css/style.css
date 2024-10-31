@@ -38,14 +38,15 @@ header {
 .description {
     display: flex;
     flex-direction: column;
+    margin: 20px 0 20px 0;
 }
 
 .description h1 {
-    margin: 50px 0 5px 0;
+    margin-bottom: 0;
 }
 
 .description p {
-    margin: 0 0 30px 0;
+    margin-top: 5px;
 }
 
 .nav-button {
@@ -61,12 +62,14 @@ header {
 
 .search-bar {
     display: flex;
+    margin: 20px 0 20px 0;
 }
 
 .search-text {
-    padding: 12px 20px 12px 20px;
+    padding: 13px 0 13px 0;
     border: 0.5px #F2F2F2 solid;
     font-weight: bold;
+    text-align: center;
 }
 
 .search-button {
@@ -90,6 +93,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: 20px 0 20px 0;
 }
 
 .filter-button {
@@ -206,7 +210,16 @@ a {
     margin-bottom: 5px;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+}
 
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
