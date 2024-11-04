@@ -88,12 +88,16 @@ header {
     font-weight: bold;
 }
 
-#search-mg {
+#search-dot {
     border: 0.5px #F2F2F2 solid;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
     padding: 12px;
     color: black;
+}
+
+#search-mg {
+    display: none;
 }
 
 .filters {
@@ -406,6 +410,21 @@ footer {
         border-top: 3px solid white;
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
+    }
+    .search-button {
+        display: none;
+    }
+    #search-mg {
+        display: inline;
+        border: 0.5px #0065FC solid;
+        background-color: #0065FC;
+        border-radius: 10px;
+        padding: 12px;
+        color: white;
+        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+    }
+    #search-mg:hover {
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
     }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
