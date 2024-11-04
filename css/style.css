@@ -27,6 +27,10 @@ header {
     margin-top: 20px;
 }
 
+.logo img {
+    height: 19px;
+}
+
 .navigation {
     display: flex;
     justify-content: center;
@@ -94,9 +98,15 @@ header {
 
 .filters {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 10px;
     margin: 20px 0 20px 0;
+    gap: 20px;
+}
+
+.filters-buttons {
+    display: flex;
+    gap: 10px;
 }
 
 .filter-button {
@@ -224,6 +234,8 @@ a {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    display: flex;
+    flex-direction: column;
 }
 
 .populaires-title {
@@ -322,6 +334,20 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .navigation {
+        width: 30%;
+    }
+
+    .main-container {
+        max-width: 950px;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -352,9 +378,61 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards img {
+        height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation {
+        width: 100%;
+    }
+    .nav-button {
+        border-bottom: 3px solid white;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    .filters-buttons {
+        flex-wrap: wrap;
+    }
+    .nav-button:hover {
+        border-top: 3px solid white;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+    .populaires-cards a {
+        width: 100%;
+    }
+    .populaires-cards {
+        flex-direction: column;
+    }
+    .hebergements-cards a {
+        width: 100%;
+    }
+    .hebergements-cards {
+        flex-direction: column;
+    }
+    .activites-cards a {
+        width: 100%;
+    }
+    .activites-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .activites-cards img {
+        height: 141px;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
