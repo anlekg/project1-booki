@@ -38,12 +38,6 @@ header {
     text-align: center;
 }
 
-.description {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0 20px 0;
-}
-
 .description h1 {
     margin-bottom: 0;
 }
@@ -77,6 +71,10 @@ header {
 
 .search-text:focus {
     outline: none;
+}
+
+.search-text::placeholder {
+    color: black;
 }
 
 .search-button {
@@ -133,6 +131,7 @@ header {
 .main-container {
     display: flex;
     max-width: 1440px;
+    padding: 0 3%;
     margin: auto;
     flex-direction: column;
 }
@@ -286,11 +285,13 @@ a {
 /****** Activites ***********/
 
 .activites {
-    padding: 50px;
+    padding: 2%;
+    margin-bottom: 2%;
 }
 
 .activites-cards {
     width: 97%;
+    height: 439px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -304,7 +305,9 @@ a {
 .activites-cards .card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 0;
+    height: 100%;
 }
 
 .activites-cards img {
@@ -324,7 +327,7 @@ footer {
     display: flex;
     margin: 0 0 20px 20px;
     flex-direction: row;
-    gap: 200px;
+    gap: 10%;
 }
 
 .footer-item {
@@ -384,18 +387,37 @@ footer {
         font-size: 13px;
     }
 
+    .activites {
+        padding: 3%;
+    }
+
     .activites-cards img {
         height: 200px;
+    }
+    .activites-cards {
+        height: auto;
     }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .main-container {
+        padding: 0;
+    }
     header {
         flex-direction: column;
         align-items: center;
     }
     .navigation {
+        width: 100%;
+    }
+    .search-and-filters {
+        padding: 0 3%;
+    }
+    .search-bar {
+        width: 100%;
+    }
+    .search-text {
         width: 100%;
     }
     .nav-button {
@@ -405,6 +427,10 @@ footer {
     }
     .filters-buttons {
         flex-wrap: wrap;
+        width: 100%;
+    }
+    .filter-button {
+        width: 32%;
     }
     .nav-button:hover {
         border-top: 3px solid white;
@@ -422,9 +448,6 @@ footer {
         padding: 12px;
         color: white;
         box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
-    }
-    #search-mg:hover {
-        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
     }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -446,6 +469,9 @@ footer {
     }
     .hebergements-cards {
         flex-direction: column;
+    }
+    .activites {
+        padding: 30px;
     }
     .activites-cards a {
         width: 100%;
