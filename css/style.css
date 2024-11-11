@@ -34,7 +34,7 @@ header {
 .navigation {
     display: flex;
     justify-content: center;
-    width: 20%;
+    width: 30%;
     text-align: center;
 }
 
@@ -345,10 +345,6 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .navigation {
-        width: 30%;
-    }
-
     .main-container {
         max-width: 950px;
     }
