@@ -59,11 +59,11 @@ header {
 
 .search-bar {
     display: flex;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
 }
 
 .search-text {
-    padding: 13px 0 13px 0;
+    padding: 13px 0;
     border: 0.5px #F2F2F2 solid;
     font-weight: bold;
     text-align: center;
@@ -100,9 +100,9 @@ header {
 
 .filters {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin: 20px 0 20px 0;
+    flex-wrap: wrap;
+    margin: 20px 0;
     gap: 20px;
 }
 
@@ -114,8 +114,11 @@ header {
 .filter-button {
     border: 2px #d9d9d9 solid;
     border-radius: 30px;
-    padding: 10px 20px 10px 20px;
+    padding: 0 20px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .filter-button:hover {
@@ -125,7 +128,7 @@ header {
 .search-and-filters .fa-info {
     border: #F2F2F2 solid;
     border-radius: 30px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
 }
 
 .main-container {
@@ -350,10 +353,9 @@ footer {
         max-width: 950px;
     }
 
-    .filters {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0px;
+    .filters h3 {
+        width: 100%;
+        margin: 0;
     }
 
     .hebergements-and-populaires {
@@ -430,7 +432,8 @@ footer {
         width: 100%;
     }
     .filter-button {
-        width: 32%;
+        width: 43%;
+        padding: 0 2%;
     }
     .nav-button:hover {
         border-top: 3px solid white;
