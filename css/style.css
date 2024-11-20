@@ -400,7 +400,7 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .nav-button {
-        border-top: 3px solid #D3D3D3;
+        border-bottom: 3px solid #D3D3D3;
     }
     .main-container {
         padding: 0;
